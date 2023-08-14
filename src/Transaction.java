@@ -1,3 +1,9 @@
+/**
+ * Matthew Ovie Enamuotor
+ * August 11 2023
+ * An template for an Aggregate class Transaction
+ */
+
 public class Transaction {
     private String month;
     private int day;

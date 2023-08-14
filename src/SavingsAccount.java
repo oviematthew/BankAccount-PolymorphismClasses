@@ -1,10 +1,10 @@
 
-
 /**
  * Matthew Ovie Enamuotor
  * August 11 2023
- * An template for Chequing Account objects and a subclass to Bank Account
+ * An template for Savings Account objects and a subclass to Bank Account
  */
+
 import java.util.ArrayList;
 
 public class SavingsAccount extends BankAccount {
@@ -16,7 +16,7 @@ public class SavingsAccount extends BankAccount {
 
     public SavingsAccount(String customerName, String month, double balance)
     {
-        // Since accountType is not a parameter, you pass the account type, here it is chequing
+        // Since accountType is not a parameter, you pass the account type, here it is Savings
         super(customerName, "Savings", month);
         this.balance = balance;
         this.withdrawals = 0;
