@@ -46,8 +46,9 @@ public class Transaction {
        this.balance = balance;
     }
     public String toString() {
-        return String.format("%-10s %-10d %-10s %-10s $%,.2f %-10s $%,.2f", month, day, transaction, "", amount, "Balance", balance);
+        return String.format("%-10s %-10d %-15s $%-15.2f %-15s$ %,.2f", month, day, transaction, amount, "Balance", balance);
     }
+    
     
 
 }

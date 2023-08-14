@@ -25,7 +25,8 @@ public class BankAccountTester {
         accountOne.printTransaction();
         
         // 6. Then, re-print the object at the end of the month
-        System.err.println(accountOne.toString());
+        System.out.println(accountOne.toString());
+        System.out.println("--------------------------------------------------");
 
         // 7. Using polymorphism, create a SavingsAccount object, using a BankAccount reference. Use the multi-arg constructor
         BankAccount accountTwo = new SavingsAccount("Bethany Anderson", "July", 6100.00);
@@ -35,5 +36,20 @@ public class BankAccountTester {
         System.out.println(accountTwo.toString());
         System.out.println("--------------------------------------------------");
 
+        // 9. Apply the following transactions to Bethany’s saving account
+        accountTwo.deposit(500.5, 3);
+        accountTwo.withdrawals(1000, 6);
+        accountTwo.deposit(250, 15);
+        accountTwo.withdrawals(3000.5, 21);
+        accountTwo.withdrawals(825.75, 27);
+        accountTwo.deposit(250, 28);
+        
+
+        // 10. Print the month’s transaction record.
+        accountTwo.printTransaction();
+
+        //11. Then, re-print the object at the end of the month.
+        System.out.println(accountTwo.toString());
+        System.out.println("--------------------------------------------------");
     }
 }

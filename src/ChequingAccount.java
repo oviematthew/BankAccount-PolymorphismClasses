@@ -83,7 +83,7 @@ public class ChequingAccount extends BankAccount {
 
         System.out.println("Number of Withdrawals for  " + month + ": " + withdrawals);
         System.out.println("Number of Deposits for "  + month + ": " + deposits);
-        System.out.println("Balance: " + balance);
+        System.out.println("Balance: $" + String.format("%,.2f", balance));
         System.out.println("--------------------------------------------------");
     }
 
